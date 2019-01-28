@@ -1,15 +1,16 @@
 public class persegi {
-    public static void main(String[] args) {
-        hitung x = new hitung();
-        x.hasilKeliling();
+    private int keliling;
+    private int sisi;
+
+    public void hitungKeliling(){
+        this.keliling = 4*sisi;
     }
 
-    public static class hitung {
-        int s = 5;
-        double keliling = s * s * s * s;
+    public void setSisi(int sisi){
+        this.sisi = sisi;
+    }
 
-        void hasilKeliling() {
-            System.out.println("Keliling persegi adalah = " + keliling);
-        }
+    public int getKeliling(){
+        return keliling;
     }
 }

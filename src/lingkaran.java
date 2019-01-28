@@ -1,16 +1,21 @@
 public class lingkaran {
-    public static void main(String[] args) {
-        hitung x = new hitung();
-        x.hasillingkaran();
-    }
+        private int r;
+        private double pi;
+        private double Keliling;
 
-    public static class hitung {
-        int r = 5;
-        double pi = 3.14;
-        double luas = 2 * pi * r;
+        public void hitungKeliling () {
+            this.Keliling = 2 * pi * r;
+        }
 
-    void hasillingkaran() {
-        System.out.println("Keliling Lingkaran Adalah = " + luas);
-    }
-    }
+        public void setR ( int r){
+            this.r = r;
+        }
+
+        public void setPi ( double pi){
+            this.pi = pi;
+        }
+
+        public double getKeliling () {
+            return Keliling;
+        }
 }
